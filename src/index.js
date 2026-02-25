@@ -1,7 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
+import { createRoot } from "react-dom/client";
 
+function App() {
+  return (
+    <p>I am learning React. My life is getting better.</p>
+  );
+}
 
-
-ReactDOM.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
